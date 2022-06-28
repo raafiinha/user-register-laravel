@@ -46,7 +46,9 @@ A pesquisa não diferencia maiúsculas de minúsculas.
 #### Ao enviar uma solicitação, certifique-se de passar o parâmetro de consulta, que pode conter um dos seguintes valores:
 
 nome de cadastro (nome completo ou primeiro e ultimo nome)
+
 numero do documento (somente numeros )
+
 Código documento IATA (RG, CPF, etc.)
 
 Exemplo :
