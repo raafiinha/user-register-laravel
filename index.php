@@ -1,10 +1,10 @@
 <?php
-// Operação  normal da API
+// Operação normal da API
 header( 'Acesso-Controle-Permitir-Origem: *' );
 header( 'Acesso-Controle-Permitir-Cabeçalhos: *' );
 header( 'Métodos de Controle de Acesso-Permitir: *' );
 header( 'Acesso-Controle-Permitir-Credenciais: true' );
-header( 'Tipo de conteúdo: json/aplicativo' );				
+header( 'Tipo de conteúdo: json/aplicativo' );
 
 requer " connect.php ";
 requer " funções.php ";
@@ -39,13 +39,13 @@ if ( $ método === 'POST' ) {
 }
 
 if ( $ método === 'GET' ) {
-	if ( $ tipo === '  documento' ) {
-		aeroporto( $ connect , $ _GET [ 'consulta' ]);
-	} elseif ( $ type === 'flight' ) {
-		voo( $ connect , $ _GET );
-	} elseif ( $ type === 'reserva' && isset( $ code )) {
+	if ( $ tipo === 'documento' ) {
+		RG( $ connect , $ _GET [ 'consulta' ]);
+	} elseif ( $ type === 'RG' ) {
+		NUMERO( $ connect , $ _GET );
+	} elseif ( $ type === 'NUMERO' && isset( $ code )) {
 		armorInfo( $ connect , $ code );
-	} elseif ( $ api === 'usuário' && $ type === 'reserva' ) {
+	} elseif ( $ api === 'usuário' && $ type === 'NUMERO' ) {
 		// Aqui nós pegamos o Bearer e o passamos para a função com um check.
 		$ cabeçalhos = apache_request_headers();
 		$ token = $ headers [ 'Autorização' ];
@@ -56,4 +56,3 @@ if ( $ método === 'GET' ) {
 		$ token = $ headers [ 'Autorização' ];
 		infoUser( $ connect , $ token );
 	}
-}
