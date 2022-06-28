@@ -1,10 +1,10 @@
 <?php
-// Cabeçalhos para operação normal da API
+// Operação  normal da API
 header( 'Acesso-Controle-Permitir-Origem: *' );
 header( 'Acesso-Controle-Permitir-Cabeçalhos: *' );
 header( 'Métodos de Controle de Acesso-Permitir: *' );
 header( 'Acesso-Controle-Permitir-Credenciais: true' );
-header( 'Tipo de conteúdo: json/aplicativo' );
+header( 'Tipo de conteúdo: json/aplicativo' );				
 
 requer " connect.php ";
 requer " funções.php ";
@@ -29,7 +29,7 @@ if ( $ método === 'POST' ) {
 		addUser( $ connect , $ _POST );
 	} elseif ( $ type === 'login' ) {
 		login( $ conectar , $ _POST );
-	} elseif ( $ type === 'reserva' ) {
+	
 			// Aqui a mágica é feita abaixo para que possamos obter corretamente os dados de "body" - "raw" (estamos falando do Postman, já que a Api foi testada nele)
 
 			$ data = file_get_contents( 'php://input' ); // Obtém dados em JSON
@@ -39,7 +39,7 @@ if ( $ método === 'POST' ) {
 }
 
 if ( $ método === 'GET' ) {
-	if ( $ tipo === 'aeroporto' ) {
+	if ( $ tipo === '  documento' ) {
 		aeroporto( $ connect , $ _GET [ 'consulta' ]);
 	} elseif ( $ type === 'flight' ) {
 		voo( $ connect , $ _GET );
