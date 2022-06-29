@@ -58,7 +58,7 @@ class Conteudo extends Cadastro de Usuario{
     }
 
     public function insert($obj){
-    	$sql = "INSERT INTO conteudo(titulo,descricao,horario,curso_id,periodo_id,disciplina_id) VALUES (:titulo,:descricao,:horario,:curso_id,:periodo_id,:disciplina_id)";
+    	$sql = "INSERT INTO conteudo(Nome,Ultimo_nome,Telefone,Senha,RG_id,CPF_id) VALUES (:Nome,:Ultimo_nome,:Telefone,:Senha,:RG_id,:CPF_id)";
     	$consulta = Conexao::prepare($sql);
         $consulta->bindValue('Nome',  $obj->Nome);
         $consulta->bindValue('Ultimo_nome', $obj->Ultimo_nome);
