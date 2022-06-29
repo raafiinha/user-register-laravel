@@ -70,7 +70,7 @@ function   addUser ( $ connect , $ data ) {
 //////////////////////////////////////////////// / ///////////////////////////////////// Autenticação
 função login ( $ connect , $ data ) {
 	// Dados de validade
-	$ phone = filter_var(trim( $ data [ 'telefone' ]), FILTER_SANITIZE_STRING );
+	$ telefone = filter_var(trim( $ data [ 'telefone' ]), FILTER_SANITIZE_STRING );
 	$ senha = md5(filter_var(trim( $ dados [ 'senha' ]), FILTER_SANITIZE_STRING ));
 
 	if (mb_strlen( $ telefone ) < 1 || mb_strlen( $ senha ) < 1 ) {
