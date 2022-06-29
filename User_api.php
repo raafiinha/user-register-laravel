@@ -13,8 +13,7 @@
 
     class UserController extends API
     {
-
-         
+            
          protected function user() {
             if ($this->method == 'GET') {
 
