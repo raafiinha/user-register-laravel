@@ -4,7 +4,7 @@ Em caso de dados especificados incorretamente nas solicitações, uma resposta v
 { Validation-error ou Unauthorized }, validação incorreta fornecida.
 
 
-O banco de dados pode ser encontrado entre os arquivos. Seu nome é "module2.sql" .
+O banco de dados pode ser encontrado entre os arquivos. Seu nome é "Config.SQL" .
 
 #### Metodo a utilizar: (POST)  
 
