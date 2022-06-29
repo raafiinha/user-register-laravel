@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `cadastro`
 --
 
-CREATE TABLE IF NOT EXISTS `conteudo` (
+CREATE TABLE IF NOT EXISTS `cadastro de usuario` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `nome` varchar(120) NOT NULL,
   `ultimonome` longtext NOT NULL,
