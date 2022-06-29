@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `cadastro de usuario` (
   `nome` varchar(120) NOT NULL,
   `ultimo_nome` longtext NOT NULL,
   `telefone` varchar(30) NOT NULL,
-  `senha` varchar(120) NOT NULL,
+  `senha` varchar(40) NOT NULL,
   `RG_id` int(30) NOT NULL,
   `CPF_id` int(30) NOT NULL,
   PRIMARY KEY (`id`),
