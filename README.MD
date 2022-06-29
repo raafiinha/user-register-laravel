@@ -1,4 +1,4 @@
-# API Restful Laravel-8
+# API Restful PHP Nativo
 
 Em caso de dados especificados incorretamente nas solicitações, uma resposta virá com 
 { Validation-error ou Unauthorized }, validação incorreta fornecida.
