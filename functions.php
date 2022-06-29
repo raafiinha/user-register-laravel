@@ -43,7 +43,7 @@ function   addUser ( $ connect , $ data ) {
 	$ api_token = uniqid().uniqid().uniqid();
 	// Consulta ao banco de dados
 	$ stmt = $ connect -> prepare (" INSERT INTO users(primeiro_nome, ultimo_nome, telefone, senha, dnumero_documento, api_token) VALUES(?, ?, ?, ?, ?, ?) ");
-	$ stmt -> execute ([" $ ultimo_nome " , " $ ultimo_nome ", " $ telefone ", " $ senha ", " $ numero_documento ", " $ api_token "]);
+	$ stmt -> execute ([" $ nome " , " $ ultimo_nome ", " $ telefone ", " $ senha ", " $ numero_documento ", " $ api_token "]);
 	
 	//Resposta da base
 	if ( $ stmt -> rowCount () > 0 ) {
@@ -160,6 +160,4 @@ função  cadastros ( $ connect , $ query ) {
 		];
 		echo json_encode( $ res );
 	}
-}
-
 }
