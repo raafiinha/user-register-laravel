@@ -49,7 +49,7 @@ nome de cadastro (nome completo ou primeiro e ultimo nome)
 
 numero do documento (somente numeros )
 
-Código documento IATA (RG, CPF, etc.)
+Código documento C-DOC (RG, CPF, etc.)
 
 Exemplo :
 http://localhost:8000/api/cadastro?query=RG
