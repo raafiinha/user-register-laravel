@@ -26,7 +26,7 @@ Ao enviar uma solicitação, você deve passar um objeto com as seguintes propri
 - telefone - campo obrigatório e exclusivo, string
 
 
-- numero documento - obrigatório, string de 10 dígitos (pode ser com um zero à esquerda)
+- numero documento - obrigatório, string de 10 dígitos ( RG, CPF )
 
 
 - senha - campo obrigatório, string
@@ -37,28 +37,30 @@ Ao enviar uma solicitação, você deve passar um objeto com as seguintes propri
 
 http://localhost:8000/api/login
 
-Ao enviar uma solicitação, você deve inseir um objeto com login (número de telefone) e senha;
+Ao enviar uma solicitação, você deve inseir um o login (email) e (senha);
 
-#### { telefone senha } A resposta deve vir com um token de usuário gerado.
+#### A resposta deve vir com um token de usuário gerado.
 
 ![687474703a2f2f636f6e65637465732e636f6d2e62722f6170695f6c61726176656c5f646f63732f706f7374746f6b656e65782e706e67](https://user-images.githubusercontent.com/107967231/176337018-ee45ba9c-6c4d-4450-a90e-be6b57a03399.png)
 
 
 
-#### Metodo a utilizar: (GET)  
-http://localhost:8000/api/cadastros
 
-Solicitação de pesquisa de cadastros pelo nome "cadastrado  ou documento .
+
+#### Solicitação de pesquisa de cadastros pelo nome cadastrado ou documento .
 
 A pesquisa não diferencia maiúsculas de minúsculas.
 
+#### Metodo a utilizar: (GET)  
+http://localhost:8000/api/cadastros
+
 #### Ao enviar uma solicitação, certifique-se de passar o parâmetro de consulta, que pode conter um dos seguintes valores:
 
-nome de cadastro (nome completo ou primeiro e ultimo nome)
+- nome de cadastro ( primeiro e ultimo nome)
 
-numero do documento (somente numeros )
+- numero do documento (somente numeros ) (RG OU CPF CADASTRADO)
 
-Código Documento C-DOC (RG, CPF, etc.)
+- Código Documento C-DOC ( INFORMAR RG OU CPF)
 
 Exemplo :
 http://localhost:8000/api/cadastro?query=RG
@@ -66,4 +68,12 @@ http://localhost:8000/api/cadastro?query=RG
 Exemplo: http://localhost:8000/api/cadastro?query=CPF
 
 A resposta ao exemplo acima deve retornar ao RG ou CPF do cadastrado .
+
+# INFO ADICIONAL
+
+![687474703a2f2f636f6e65637465732e636f6d2e62722f6170695f6c61726176656c5f646f63732f726571756573746865616465722e706e67](https://user-images.githubusercontent.com/107967231/176339224-f261b38c-72c1-43a5-86ca-028ea2379fa5.png)
+
+- #### EXEMPLO DE SOLICITAÇÃO DE CABEÇALHO
+
+
 
