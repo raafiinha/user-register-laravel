@@ -56,5 +56,5 @@ http://localhost:8000/api/cadastro?query=RG
 
 Exemplo: http://localhost:8000/api/cadastro?query=CPF
 
-A resposta ao exemplo acima deve retornar ao RG do cadastrado .
+A resposta ao exemplo acima deve retornar ao RG ou CPF do cadastrado .
 
