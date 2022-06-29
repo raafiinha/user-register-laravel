@@ -136,7 +136,7 @@ função  cadastros ( $ connect , $ query ) {
 
 	// Solicitação ao banco de dados
 	$ consulta = '%' . $ consulta . '%' ;
-	$ stmt = $ connect -> prepare (" SELECT * FROM airports WHERE city LIKE ? OR name LIKE ? OR iata LIKE ? ");
+	$ stmt = $ connect -> prepare (" SELECT * FROM CDOC ? OR name LIKE ? OR CDOC LIKE ? ");
 	$ stmt -> executar ([" $ consulta ", " $ consulta ", " $ consulta "]);
 	$ sel = $ stmt -> buscar ( PDO :: FETCH_ASSOC );
 	// Responda
