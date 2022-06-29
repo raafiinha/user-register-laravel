@@ -1,4 +1,9 @@
-# API Restful PHP Nativo
+# API Restful PHP 
+
+Uma aplicação simples de cadastro de usuarios com banco de dados relacional desenvolvida em PHP,
+
+utilizando arquitetura RESTful, enviando e consumindo dados no formato JSON.
+
 
 Em caso de dados especificados incorretamente nas solicitações, uma resposta virá com 
 { Validation-error ou Unauthorized }, validação incorreta fornecida.
@@ -49,7 +54,7 @@ nome de cadastro (nome completo ou primeiro e ultimo nome)
 
 numero do documento (somente numeros )
 
-Código documento C-DOC (RG, CPF, etc.)
+Código Documento C-DOC (RG, CPF, etc.)
 
 Exemplo :
 http://localhost:8000/api/cadastro?query=RG
