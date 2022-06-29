@@ -1,4 +1,4 @@
-?php
+<?php
     
     if(empty($_REQUEST['controller'])) {
         echo 'Hey! You just got 404\'D. Did you just come up with that url by your own?';
