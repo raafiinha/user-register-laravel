@@ -129,7 +129,28 @@ ALTER  TABLE  ` documento` _
 ALTER  TABLE  ` usuarios` _
   MODIFY ` id `  bigint ( 20 ) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2 ;
 
--
+
+- Restrições de chave estrangeira na tabela `bookings`
+--
+ALTER  TABLE  ` reservas` _
+  ADICIONAR CONSTRAINT  ` bookings_flight_back_foreign `  FOREIGN KEY ( ` flight_back` ) REFERENCES  ` flights ` ( ` id ` ) ON DELETE CASCADE ,
+  ADD CONSTRAINT  ` bookings_flight_from_foreign `  FOREIGN KEY ( ` flight_from ` ) REFERENCES  ` flights ` ( ` id ` ) ON DELETE CASCADE ;
+
+--
+-- Restrições de chave estrangeira na tabela `flights`
+--
+ALTER  TABLE  ` voos` _
+  ADICIONE CONSTRAINT  ` flight_from_id_foreign `  FOREIGN KEY ( ` from_id ` ) REFERENCES  ` aeroportos ` ( ` id ` ) ON DELETE CASCADE ,
+  ADICIONAR CONSTRAINT  ` fights_to_id_foreign `  FOREIGN KEY ( ` to_id ` ) REFERÊNCIAS  ` aeroportos ` ( ` id ` ) ON DELETE CASCADE ;
+
+--
+-- Restrições de chave estrangeira na tabela `passageiros`
+--
+ALTER  TABLE  ` passageiros` _
+  ADD CONSTRAINT  ` passageiros_booking_id_foreign`  FOREIGN KEY ( ` book_id` ) REFERÊNCIAS  ` reservas` ( ` id` ) ON DELETE CASCADE ; _
+COMPROMISSO ;
+
+
 
 /* !40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */ ;
 /* !40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */ ;
