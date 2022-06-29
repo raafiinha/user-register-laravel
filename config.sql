@@ -31,9 +31,9 @@ CREATE TABLE IF NOT EXISTS `cadastro de usuario` (
   `nome` varchar(120) NOT NULL,
   `ultimo_nome` longtext NOT NULL,
   `telefone` varchar(30) NOT NULL,
-  `senha` int(30) NOT NULL,
-  `RG` int(30) NOT NULL,
-  `CPF` int(30) NOT NULL,
+  `senha` varchar(120) NOT NULL,
+  `RG_id` int(30) NOT NULL,
+  `CPF_id` int(30) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `cadastro de usuario` (
 -- Extraindo dados da tabela `conteudo`
 --
 
-INSERT INTO `cadastro de usuario` (`id`, `nome`, `ultimo_nome`, `telefone`, `senha_id`, `RG_id`, `CPF_id`) VALUES
+INSERT INTO `cadastro de usuario` (`id`, `nome`, `ultimo_nome`, `telefone`, `senha`, `RG_id`, `CPF_id`) VALUES
 
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
