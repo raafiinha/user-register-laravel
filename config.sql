@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `cadastro de usuario` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `nome` varchar(120) NOT NULL,
-  `ultimonome` longtext NOT NULL,
+  `ultimo_nome` longtext NOT NULL,
   `telefone` varchar(30) NOT NULL,
   `senha` int(30) NOT NULL,
   `RG` int(30) NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `cadastro de usuario` (
 -- Extraindo dados da tabela `conteudo`
 --
 
-INSERT INTO `cadastro de usuario` (`id`, `nome`, `ultimonome`, `telefone`, `senha_id`, `RG_id`, `CPF_id`) VALUES
+INSERT INTO `cadastro de usuario` (`id`, `nome`, `ultimo_nome`, `telefone`, `senha_id`, `RG_id`, `CPF_id`) VALUES
 
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
