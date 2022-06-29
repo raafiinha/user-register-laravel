@@ -1,4 +1,4 @@
-# API Restful PHP 
+# API Restful PHP/LARAVEL
 
 Uma aplicação simples de cadastro de usuarios com banco de dados relacional desenvolvida em PHP,
 
@@ -40,6 +40,10 @@ http://localhost:8000/api/login
 Ao enviar uma solicitação, você deve inseir um objeto com login (número de telefone) e senha;
 
 #### { telefone senha } A resposta deve vir com um token de usuário gerado.
+
+![687474703a2f2f636f6e65637465732e636f6d2e62722f6170695f6c61726176656c5f646f63732f706f7374746f6b656e65782e706e67](https://user-images.githubusercontent.com/107967231/176337018-ee45ba9c-6c4d-4450-a90e-be6b57a03399.png)
+
+
 
 #### Metodo a utilizar: (GET)  
 http://localhost:8000/api/cadastros
