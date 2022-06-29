@@ -24,7 +24,7 @@ SET time_zone =  " +00:00 " ;
 -------------------------------------------------- _ --------
 
 --
--- Estrutura da tabela `aeroportos`
+-- Estrutura da tabela `DOCUMENTO`
 --
 
 CRIAR  TABELA ` DOCUMENTO` (
@@ -81,7 +81,7 @@ INSERT  INTO ` USUARIOS` (` primeiro_nome ` , ` ulitmo_nome ` , ` data_nasciment
 CREATE  TABLE ` usuários` (
   ` primeiro_nome `  varchar ( 255 ) COLLATE utf8mb4_unicode_ci NOT NULL ,
   ` ulitmo_nome `  varchar ( 255 ) COLLATE utf8mb4_unicode_ci NOT NULL ,
-  ` telefone `  varchar ( 255 ) COLLATE utf8mb4_unicode_ci NOT NULL ,
+  `  telefone `  varchar ( 255 ) COLLATE utf8mb4_unicode_ci NOT NULL ,
   ` senha `  varchar ( 255 ) COLLATE utf8mb4_unicode_ci NOT NULL ,
   ` numero_documento `  varchar ( 255 ) COLLATE utf8mb4_unicode_ci NOT NULL ,
   ` api_token `  varchar ( 255 ) COLLATE utf8mb4_unicode_ci DEFAULT NULL ,
