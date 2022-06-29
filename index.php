@@ -22,15 +22,16 @@ $ id = $ params [ 2 ];
 $ codigo = $ params [ 2 ];
 
 
-/* Além disso, tudo é muito simples: verificamos a solicitação correspondente
+/*  verificar a solicitação correspondente
 	e chame a função desejada. Todas as funções estão no arquivo functions.php. */
+
 if ( $ método === 'POST' ) {
 	if ( $ tipo === 'registrador' ) {
 		addUser( $ connect , $  _POST );
 	} elseif ( $ type === 'login' ) {
 		login( $ conectar , $  _POST );
 	
-			// Aqui a mágica é para que obteve corretamente os dados de "body" - "raw" (estamos falando do Postman, já que a abaixopi foi nele)
+			//  obteve corretamente os dados de "body" - "raw" ( Postman, já que a abaixo api foi nele)
 
 			$ data = file_get_contents( 'php://input' ); // Obtém dados em JSON
 			$ data = json_decode( $ data , true ); //Decodifica do JSON para passar uma variável como parâmetro
