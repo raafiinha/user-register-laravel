@@ -15,7 +15,7 @@
     {
 
         /**
-         * Endpoint
+          Endpoint
          */
          protected function user() {
             if ($this->method == 'GET') {
