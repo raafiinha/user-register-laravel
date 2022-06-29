@@ -14,9 +14,7 @@
     class UserController extends API
     {
 
-        /**
-          Endpoint
-         */
+         
          protected function user() {
             if ($this->method == 'GET') {
 
